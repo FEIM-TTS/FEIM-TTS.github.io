@@ -6,7 +6,8 @@
     <meta name="description" content="FEIM-TTS">
     <meta name="keywords" content="FEIM-TTS, TTS, MultiModal, Face, Emotion">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Facial Expression-Driven Text-to-Speech Synthesis:Innovations in Diffusion-Based Emotion Intensity Manipulation</title>
+    <title>Facial Expression-Driven Text-to-Speech Synthesis:Innovations in Diffusion-Based Emotion Intensity
+        Manipulation</title>
 
 
     <style type="text/css">
@@ -516,7 +517,8 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title">FEIM-TTS</h1>
-                        <h2>Facial Expression-Driven Text-to-Speech Synthesis:<br>Innovations in Diffusion-Based Emotion Intensity Manipulation</h2>
+                        <h2>Facial Expression-Driven Text-to-Speech Synthesis:<br>Innovations in Diffusion-Based Emotion
+                            Intensity Manipulation</h2>
                     </div>
                 </div>
             </div>
@@ -532,7 +534,8 @@
                     <!-- </div> -->
                 </div>
                 <h2 class="subtitle has-text-centered">
-                    <span class="dnerf">FEIM-TTS</span> generates speech from given text script and face image.
+                    <span class="dnerf">FEIM-TTS</span> generates speech from given text script, face image and emotion
+                    ques.
                 </h2>
             </div>
         </div>
@@ -547,29 +550,28 @@
                 <div class="column is-four-fifths">
                     <h2 class="title is-3">Abstract</h2>
                     <div class="columns is-vcentered is-centered">
-                    <!-- <div class="column is-3 has-text-centered"> -->
-                    <img src="./image/figure_2.png">
-                    <!-- </div> -->
-                </div>
+                        <!-- <div class="column is-3 has-text-centered"> -->
+                        <img src="./image/figure_2.png">
+                        <!-- </div> -->
+                    </div>
                     <div class="content has-text-justified">
                         <p>
-                            The goal of this work is zero-shot text-to-speech synthesis, with speaking styles and voices
-                            learnt from facial characteristics.
-                            Inspired by the natural fact that people can imagine the voice of someone when they look at
-                            his or her face, we introduce a face-styled diffusion text-to-speech (TTS) model within a
-                            unified framework learnt from visible attributes, called <span
-                                class="dnerf">Face-TTS</span>.
-                            This is the first time that face images are used as a condition to train a TTS model.
+                            This study proposes a zero-shot text-to-speech (TTS) synthesis model capable of generating
+                            speech that not only corresponds to facial images but also expresses emotions, with the
+                            distinctive ability to manipulate the intensity of those emotions. To our knowledge, the
+                            proposed model.
+                            <span class="dnerf">FEIM-TTS</span>.
+                            This is the first of its kind to utilize both facial images and the
+                            intensity of emotion to produce suitable voice outputs.
                         </p>
                         <p>
-                            We jointly train cross-model biometrics and TTS models to preserve speaker identity between
-                            face images and generated speech segments.
-                            We also propose a speaker feature binding loss to enforce the similarity of the generated
-                            and the ground truth speech segments in speaker embedding space.
-                            Since the biometric information is extracted directly from the face image, our method does
-                            not require extra fine-tuning steps to generate speech from unseen and unheard speakers.
-                            We train and evaluate the model on the LRS3 dataset, an in-the-wild audio-visual corpus
-                            containing background noise and diverse speaking styles.
+                            Moreover, our model is uniquely capable of learning and inference even in
+                            the absence of emotion labels. Consequently, we expanded our data sources to include LRS3
+                            alongside CREMA-D and MELD, addressing the lack of
+                            audio-visual-emotional datasets. Our model also generates speech for new speakers without
+                            finetuning, ideal for virtual character voices. In terms of evaluation, we have provided
+                            evidence that the generated speech varies appropriately with the intensity of the expressed
+                            emotions. This evidence supports the effectiveness of FEIM-TTS in emotional modulation.
                         </p>
                     </div>
                 </div>
